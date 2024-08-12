@@ -1,0 +1,140 @@
+* { 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.slide-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(site.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(independence.jpg);
+    background-position: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#heroslider h6::after,
+#heroslider h6::before {
+    content: "";
+    width: 40px;
+    width: 4px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 40px;
+    height: 70px;
+    margin: auto;
+}
+
+.color {
+    background: linear-gradient(to right, orange, white, green);
+    animation: bg 5s infinite;
+
+    font-size: 3.5em;
+    padding: 10px;
+    text-align: center;
+    color: orange;
+    text-shadow: 15px 10px 15px green;
+    font-family: century gothic;
+}
+
+@keyframes bg 
+{
+    0%
+    { background: linear-gradient(orange, white, green); }
+    50%
+    { background: linear-gradient(to left, orange, white, green); }
+    100%
+    { background: linear-gradient(to right, orange, white, green); }
+}
+
+.happy {
+    animation: happy 5s infinite;
+    position: relative;
+}
+
+@keyframes happy {
+    0%{top: 0px; color: white; text-shadow: 2px 3px 1px orange;}
+    25%{top: 25px; color: green; text-shadow: 2px 2px 0px white;}
+    50%{top: 50px; color: orange; text-shadow: 1px 2px 1px black;}
+    75%{top: 25px; color: white; text-shadow: 2px 3px 2px green;}
+    100%{top: 0px; color: green; text-shadow: 2px 3px 2px orange;}
+}
+
+.text {
+    font-family: century;
+    font-size: 0.5em;
+    color: #e5ff00;
+    animation: text 5s infinite;
+    text-align: center;
+}
+
+@keyframes text {
+ 
+        0% {
+            text-shadow: 2px 2px 3px orange;
+            background-color: green;
+        }
+        50% {
+            color: white;
+            background-color: orange;   
+        }
+        100% {
+            text-shadow: 2px 2px 3px green;
+            background-color: white;
+        }
+}
+
+:root {
+    --custom-color: red;
+}
+
+.custom {
+    color: var(--custom-color);
+}
+
+.custom-bg {
+    background: var(--custom-color);
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer a:hover {
+    color: #666;
+}
